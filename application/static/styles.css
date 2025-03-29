@@ -9,7 +9,7 @@
 /* --------------------- HOME ----------------------- */
 /* Menu Bar Controls */
 .navbar {
-    background: linear-gradient(to bottom, rgb(147, 2, 55), rgb(221, 0, 103));
+    background: linear-gradient(to right, rgb(147, 2, 55), rgb(221, 0, 103));
     padding-top: 2px;
     padding-bottom: 2px;
     border: 0;
@@ -18,7 +18,8 @@
     font-size: 1.1rem;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
-    z-index: 1000
+    z-index: 1000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
  /* Positioning the Menu items to the center */
@@ -212,7 +213,7 @@ h4 {
 footer {
     font-family: 'Poppins', sans-serif;
     padding: 10px 10px;
-    background-color: rgb(147, 2, 55);
+    background: linear-gradient(to left, rgb(147, 2, 55), rgb(221, 0, 103));
     color: white;
 }
 
