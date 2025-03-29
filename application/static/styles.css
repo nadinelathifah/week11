@@ -121,7 +121,6 @@
     background-color: white;
     border-radius: 2rem;
     border-color: white;
-    color: rgb(192, 0, 80);
     width: 7.5rem;
     font-size: 1rem;
     font-weight: 600;
@@ -129,7 +128,12 @@
     text-transform: uppercase;
 }
 
-.login-btn:hover {
+.login-btn a {
+    text-decoration: none; 
+    color: rgb(192, 0, 80);
+}
+
+.login-btn a:hover {
     color: rgb(198, 128, 0);
 }
 
@@ -163,10 +167,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#foundingsection .founding-2 {
-    display: flex;
-    padding-right: 150px;
-}
 
 
 #campussection .container {
