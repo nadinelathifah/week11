@@ -8,13 +8,48 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
     <title>{{ title_head }}</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg sticky-top">
-        
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="static/logos/logo2" alt="Powerpuff University Logo" height="75">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Societies</a>
+                        <ul>
+                            <li><a href="#" class="dropdown-item">Society 1</a></li>
+                            <li><a href="#" class="dropdown-item">Society 2</a></li>
+                            <li><a href="#" class="dropdown-item">Society 3</a></li>
+                            <li><a href="#" class="dropdown-item">Society 4</a></li>
+                            <li><a href="#" class="dropdown-item">Society 5</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="#" class="dropdown-item">All Societies</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Student Halls</a></li>
+                        <ul>
+                            <li><a href="#" class="dropdown-item">Blossom Hall</a></li>
+                            <li><a href="#" class="dropdown-item">Bubbles Hall</a></li>
+                            <li><a href="#" class="dropdown-item">Buttercup Hall</a></li>
+                        </ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Students</a></li>
+                </ul>
+                <button class="login-btn">Login</button>
+            </div>
+        </div>
     </nav>
+
+
 
     <h1>{{ title_body }}</h1>
 
