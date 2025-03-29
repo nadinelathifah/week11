@@ -28,6 +28,10 @@ def buttercuphall():
 def contact():
     return render_template('contact.html', title_head='contact us', title_body='contact us', subtitle='connect with our front desk', img="static/images/university/campus.jpg")
 
+@app.route('/students')
+def students():
+    return render_template('students.html', title_head='Students', title_body='PPU Students', subtitle='current students enrolled in a society', img="static/images/university/ppg.jpeg")
+
 @app.route('/signup')
 def signup():
     return render_template('sign_up.html', title_head='sign up', title_body='sign up', subtitle="join a society by signing up and choosing a society.")
