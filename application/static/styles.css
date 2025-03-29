@@ -16,6 +16,7 @@
     font-size: 1.1rem;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
+    z-index: 1000
 }
 
  /* Positioning the Menu items to the center */
@@ -38,8 +39,8 @@
 
 /* Make the textcolour change when mouse arrow hovers over */
 .navbar-nav .nav-link:hover {
-    background-color: white;
-    color: black;
+    background-color: rgb(83, 0, 26);
+    color: white;
     border-radius: 0.5rem;
 }
 
@@ -51,31 +52,41 @@
 
 /* For the Dropdown Menu */
 .drop-down {
-    background-color: rgba(116, 0, 37, 0.441);
+    background-color: white;
     box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
     list-style: none;
-    height: 100%;
     padding: 0.5rem 1rem;
     cursor: pointer;
     position: absolute;
     border-radius: 0.5rem;
     font-size: 1rem;
     display: none;
-    overflow-y: auto;
+    overflow-y: visible;
+    z-index: 1050;
+}
+
+.dropdown {
+    position: relative;
 }
 
 /* For the links on the Dropdown Bar: make the text white */
 .dropdown-item {
-    color: white;
-    font-weight: 250;
+    color: black;
+    font-weight: 375;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .dropdown:hover .drop-down {
     display: block;
 }
 
+.dropdown:hover {
+    color:rgb(198, 128, 0);
+}
+
 .dropdown .dropdown-divider {
-    border-color: white;
+    border-top: 1px solid black;
+    margin:8px 0;
 }
 
 
@@ -130,6 +141,9 @@
     padding-right: 1rem;
 }
 
+.login-btn:hover {
+    color: rgb(198, 128, 0);
+}
 
 .login-btn i {
     margin-right: 8px;
@@ -138,21 +152,21 @@
 
 
 
-
-
-
 h1 {
     font-family: 'Raleway', sans-serif;
+    font-size: 3.5rem;
+    text-shadow: 4px 4px 4px black;
+    padding-top: 130px;
+    padding-left: 100px;
 }
 
 h4 {
     text-transform: capitalize;
+    text-shadow: 4px 4px 4px black;
+    padding-left: 100px;
 }
 
-#homepage {
-    display: flex;
-    padding-left: 50px;
-}
+
 
 
 

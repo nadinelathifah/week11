@@ -38,16 +38,17 @@
                             <li><a href="#" class="dropdown-item">All Societies</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Student Halls</a></li>
+                    <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Student Halls</a>
                         <ul class="drop-down">
                             <li><a href="#" class="dropdown-item">Blossom Hall</a></li>
                             <li><a href="#" class="dropdown-item">Bubbles Hall</a></li>
                             <li><a href="#" class="dropdown-item">Buttercup Hall</a></li>
                         </ul>
+                    </li>
                     <li class="nav-item"><a href="#" class="nav-link">Students</a></li>
                 </ul>
                 <div>
-                    <button class="login-btn"><i class='bx bxs-castle bx-fade-up-hover'></i>Sign Up</button>
+                    <button class="login-btn"><i class='bx bxs-castle bx-burst-hover'></i>Sign Up</button>
                 </div>
                 
                 
@@ -55,6 +56,28 @@
         </div>
     </nav>
 
+    <section class="top-section" 
+        style="
+            position: relative;
+            background-color: black;
+            height: 100vh;">
+        <div class="container pt-5" 
+        style="
+            position: absolute;
+            top:0;
+            height: 100vh;
+            max-width: 1400px;
+            background-image: url('{{ img }}');
+            opacity: 0.9;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;">
+            <h1>{{ title_body }}</h1>
+            <h4>{{ subtitle }}</h4>
+        </div>
+      </section>
 
     {% block body_content %}
     {% endblock %}
