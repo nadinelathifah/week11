@@ -1,4 +1,84 @@
 {% extends "layout.html" %}
 {% block body_content %}
 
+<section class="about-section">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-4">
+                 <div class="card">
+                     <img id ="daliya" src="{{ url_for('static', filename='images/university/blank.jpg') }}" alt="Daliya">
+                     <div class="container">
+                         <h2>Society 1 Name</h2>
+                         <p class="title">caption</p>
+                         <p>Description</p>
+                         <p>daliya@example.com</p>
+                         <p><a href="http://127.0.0.1:8000/daliya/hello1"><button class="button">discover more</button></a></p>
+                     </div>
+                 </div>
+             </div>
+         
+         <div class="col-md-4">
+             <div class="card">
+                 <img id="daphne" src="{{ url_for('static', filename='images/university/blank.jpg') }}" alt="Daphne">
+                 <div class="container">
+                     <h2>Society 2 Name</h2>
+                     <p class="title">caption</p>
+                     <p>Description</p>
+                     <p>daphne@example.com</p>
+                     <p><a href="http://127.0.0.1:8000/daliya/Daphne"><button class="button">discover more</button></a></p>
+                     </div>
+                 </div>
+             </div>
+         
+         <div class="col-md-4">
+             <div class="card">
+                 <img id ="emma" src="{{ url_for('static', filename='images/university/blank.jpg') }}" alt="Emma">
+                 <div class="container">
+                     <h2>Society 3 Name</h2>
+                     <p class="title">caption</p>
+                     <p>Description</p>
+                     <p>emma@example.com</p>
+                     <p><a href="http://127.0.0.1:8000/daliya/emma"><button class="button">discover more</button></a></p>
+                     </div>
+                 </div>
+             </div>
+         
+         <div class="row">
+             <div class="col-md-4">
+                 <div class="card">
+                         <img id ="liya" src="{{ url_for('static', filename='images/university/blank.jpg') }}" alt="Liya">
+                     <div class="container">
+                         <h2>Society 4 Name</h2>
+                         <p class="title">caption</p>
+                         <p>Description</p>
+                         <p>liya@example.com</p>
+                         <p><a href="http://127.0.0.1:8000/daliya/liya"><button class="button">discover more</button></a></p>
+                     </div>
+                 </div>
+             </div>
+         
+             <div class="col-md-4">
+                 <div class="card">
+                         <img id ="nadine" src="{{ url_for('static', filename='images/university/blank.jpg') }}" alt="Nadine">
+                     <div class="container">
+                         <h2>Society 5 Name</h2>
+                         <p class="title">caption</p>
+                         <p>Description</p>
+                         <p>nadine@example.com</p>
+                         <p><a href="http://127.0.0.1:8000/daliya/nadine/hello_nadine"><button class="button">discover more</button></a></p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="col-md-4">
+                <div class="container pt-5">
+                    <p>We're excited for you to join!</p>
+                </div>
+            </div>
+         </div>
+    </div>
+</section>
+
+
+
 {% endblock %}

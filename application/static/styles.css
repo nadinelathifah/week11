@@ -116,7 +116,7 @@
 /* Adjusting the text-style, font, size and colour of the logo header (the 'PPU' next to the logo image) */
 .navbar-brand h2 {
     text-transform: uppercase;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Graduate', serif;
     font-size: 2rem;
     font-weight: 550;
     color: white;
@@ -152,14 +152,17 @@
     font-size: 1.1rem;
 }
 
-
+title {
+    text-transform: capitalize;
+}
 
 h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 3.5rem;
+    font-family: 'Bagel Fat One', sans-serif;
+    font-size: 4rem;
     text-shadow: 4px 4px 4px black;
     padding-top: 130px;
     padding-left: 100px;
+    text-transform: capitalize;
 }
 
 h4 {
@@ -169,12 +172,91 @@ h4 {
 }
 
 
-
-
-
 footer {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 10px 10px;
-    background-color: rgb(169, 0, 82);
+    background-color: rgb(147, 2, 55);
     color: white;
+}
+
+
+
+/* Societies Page Styling */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    padding: 16px;
+    text-align: center;
+    width: 400px;  
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card .container {
+    padding: 16px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card .title {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.card .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #ff499eff;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px #d13e7d;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.card .button:hover {
+    background-color: #d264b6ff;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+
+    .card {
+        width: 80%;  /* Adjust card width for smaller screens */
+    }
+}
+
+.blossom {
+    background-color: rgb(243, 235, 224);
+}
+
+
+.bubbles {
+    background-color: aliceblue;
+}
+
+
+.buttercup {
+    background-color: rgb(236, 248, 227);
 }
