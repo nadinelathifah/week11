@@ -1,10 +1,79 @@
 {% extends "layout.html" %}
 {% block body_content %}
 
-<section>
+<section id="rankingssection">
     <div class="container pt-5">
-        
+        <div class="row">
+            
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card ranking-1">
+                    <div class="container">
+                        <h5>#1 in crisis management</h5>
+                        <p class="title">villain-free</p>
+                        <p>our students are trained to keep calm and kick ahh no matter what!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card ranking-2">
+                    <div class="container">
+                        <h5>#2 in World GPA</h5>
+                        <p class="title">It's in the genes</p>
+                        <p>Our students excel in both academia and aeronautics. They're faster than jets.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card ranking-3">
+                    <div class="container">
+                        <h5>Top 3 in "Accidentally Saving the Day"</h5>
+                        <p class="title">We're humble about it</p>
+                        <p>Our students have an uncanny ability to be in the right place at the right time.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
+
+<hr>
+
+<section id="foundingsection">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-12 col-md-8 founding-1">
+                <h3>How PPU was founded: 1998</h3>
+                <p>Eyewitness testimony from a member of our faculty, Professor Utonium.</p>
+            </div>
+            <div class="col-12 col-md-4 founding-2">
+                <iframe src="https://www.youtube.com/embed/f7MiaSr-0ug" frameborder="0" width="450px" height="350px" allow="accelerometer autoplay clipboard-write encrypted-media; gyroscope picture-in=picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<section id="campussection">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h3>Campus Life</h3>
+                <p>Here we ensure our students gain the most out of their academic experience.
+                    <br>At PPU, students don’t just learn, they save the day – both in the classroom 
+                    <br>and on campus! From tackling cutting-edge technology to acing the latest 
+                    <br>science experiments, our curriculum is designed to optimize student potential! 
+                    <br>Powered by high-kicks, sugar, spice and everything nice.</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="{{ url_for('static', filename='images/university/campus3.png') }}" alt="photo of ppu campus">
+            </div>
+        </div>
+    </div>
+</section>
+
 
 {% endblock %}
