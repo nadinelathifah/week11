@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block body_content %}
+
+<section class="bunny">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="{{ url_for('static', filename='images/university/bunny2.jpeg') }}" alt="A student lounge" class="img-fluid shadow rounded mb-3">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="{{ url_for('static', filename='images/university/bunny3.jpeg') }}" alt="A student dinning" class="img-fluid shadow rounded mb-3">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="{{ url_for('static', filename='images/university/bunny4.jpeg') }}" alt="A student bedroom" class="img-fluid shadow rounded mb-3">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

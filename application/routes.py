@@ -24,6 +24,17 @@ def bubbleshall():
 def buttercuphall():
     return render_template('buttercup_hall.html', title_head='buttercup hall', title_body='buttercup hall', subtitle='grunge', img="static/images/university/buttercuphall.jpeg")
 
+@app.route('/bellehall')
+def bellehall():
+    return render_template('belle_hall.html', title_head='belle hall', title_body='belle hall', subtitle='bliss', img="static/images/university/belle1.jpeg")
+
+@app.route('/bunnyphall')
+def bunnyhall():
+    return render_template('bunny_hall.html', title_head='bunny hall', title_body='bunny hall', subtitle='adventious', img="static/images/university/bunny1.jpeg")
+
+
+
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html', title_head='contact us', title_body='contact us', subtitle='connect with our front desk', img="static/images/university/campus.jpg")
