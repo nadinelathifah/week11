@@ -27,3 +27,7 @@ def buttercuphall():
 @app.route('/contact')
 def contact():
     return render_template('contact.html', title_head='contact us', title_body='contact us', subtitle='connect with our front desk', img="static/images/university/campus.jpg")
+
+@app.route('/signup')
+def signup():
+    return render_template('sign_up.html', title_head='sign up', title_body='sign up', subtitle="join a society by signing up and choosing a society.")
