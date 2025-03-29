@@ -23,3 +23,7 @@ def bubbleshall():
 @app.route('/buttercuphall')
 def buttercuphall():
     return render_template('buttercup_hall.html', title_head='buttercup hall', title_body='buttercup hall', subtitle='grunge', img="static/images/university/buttercuphall.jpeg")
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html', title_head='contact us', title_body='contact us', subtitle='connect with our front desk', img="static/images/university/campus.jpg")

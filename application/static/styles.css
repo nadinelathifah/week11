@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
 
 
+/* --------------------- HOME ----------------------- */
 /* Menu Bar Controls */
 .navbar {
     background: linear-gradient(to bottom, rgb(147, 2, 55), rgb(221, 0, 103));
@@ -24,7 +25,7 @@
 .navbar-nav {
     justify-content: center;
     width: 100%;
-    gap: 90px;
+    gap: 45px;
 }
 
 
@@ -152,6 +153,42 @@
     font-size: 1.1rem;
 }
 
+
+#rankingssection .ranking-1 {
+    background-color: #ff4b5c;
+    border-radius: 20px;
+}
+
+#rankingssection .ranking-2 {
+    background-color: #6ec6ff;
+    border-radius: 20px;
+}
+
+#rankingssection .ranking-3 {
+    background-color: #65d765;
+    border-radius: 20px;
+}
+
+#campussection .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#campussection .container img {
+    max-width: 500px;
+    height: auto;
+    padding-right: 100px;
+
+}
+
+
+
+
+
+
+
 title {
     text-transform: capitalize;
 }
@@ -182,7 +219,7 @@ footer {
 
 
 /* Societies Page Styling */
-.card {
+#societiessection .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 8px;
     padding: 16px;
@@ -192,30 +229,30 @@ footer {
     margin-right: auto; 
 }
 
-.card img {
+#societiessection .card img {
     width: 100%;
     height: auto;
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card .container {
+#societiessection .card .container {
     padding: 16px;
 }
 
-.card h2 {
+#societiessection .card h2 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 8px;
 }
 
-.card .title {
+#societiessection .card .title {
     font-size: 1rem;
     color: #777;
     margin-bottom: 8px;
 }
 
-.card .button {
+#societiessection .card .button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -231,18 +268,18 @@ footer {
     border-radius: 4px;
 }
 
-.card .button:hover {
+#societiessection .card .button:hover {
     background-color: #d264b6ff;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 650px) {
-    .column {
+    #societiessection .column {
         width: 100%;
         display: block;
     }
 
-    .card {
+    #societiessection .card {
         width: 80%;  /* Adjust card width for smaller screens */
     }
 }
