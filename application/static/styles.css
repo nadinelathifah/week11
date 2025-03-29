@@ -98,22 +98,6 @@
     width: auto;
 }
 
-/* #powerpuff1 {
-    text-transform: capitalize;
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-    padding-top: 5px;
-}
-
-#powerpuff2 {
-    text-transform: capitalize;
-    font-size: 2rem;
-    font-weight: 200;
-    color: white;
-    padding-top: 5px;
-} */
-
 /* Adjusting the text-style, font, size and colour of the logo header (the 'PPU' next to the logo image) */
 .navbar-brand h2 {
     text-transform: uppercase;
@@ -170,9 +154,23 @@
 }
 
 
+#foundingsection .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#foundingsection .founding-2 {
+    display: flex;
+    padding-right: 150px;
+}
+
 
 #campussection .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     font-family: 'Poppins', sans-serif;
