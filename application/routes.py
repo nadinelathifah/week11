@@ -1,5 +1,6 @@
 from flask import render_template, url_for, request, redirect, session
-
+# from flask_mysqldb import MySQL
+# import MySQLdb.cursors
 from application import app
 import os
 
@@ -46,3 +47,12 @@ def students():
 @app.route('/signup')
 def signup():
     return render_template('sign_up.html', title_head='sign up', title_body='sign up', subtitle="join a society by signing up and choosing a society.", img="static/images/university/campus5.png")
+
+
+@app.route('/sumit', methods =['POST'])
+def submit():
+    firstname = request.form ['firstname']
+    lastname = request.form['lastname']
+    email = request.form['email']
+    society = request.form['society']
+    return f"Welcome {firstname.title()} {lastname.title()}  to the {society} Society. We will send a notification to {email}."
