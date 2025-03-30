@@ -67,3 +67,23 @@ def submit():
     email = request.form['email']
     society = request.form['society']
     return f"Welcome {firstname.title()} {lastname.title()}  to the {society} Society. We will send a notification to {email}."
+
+
+@app.route('/signup', methods=['GET', 'POST'])
+def sign_up():
+    error = ""
+    signup_form = RegisterForm()
+
+    if request.method == 'POST':
+        first_name = register_form.first_name.data
+        last_name = register_form.last_name.data
+
+        if len(first_name) == 0 or len(last_name) == 0:
+            error = 'Please supply both a first and last name'
+
+        else:
+            people.append({'Firstname': first_name, 'Lastname': last_name})
+            add_person(first_name, last_name)
+            return redirect(url_for('register'))
+
+    return render_template('register.html', form=register_form, title='Add Person', message=error)
