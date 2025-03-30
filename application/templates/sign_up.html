@@ -1,4 +1,24 @@
 {% extends "layout.html" %}
 {% block body_content %}
+<section id="signup">
+   <form id = "sign" action="" method="POST">
+      <p><label for="firstname">Firstname: </label></p>
+      <p><input type="text" id="firstname" name="firstname"/></p>
+       <p><label for="lastname">Lastname: </label></p>
+      <p><input type="text" id="lastname" name="lastname"/></p>
+        <p><label for="email">Email Id: </label></p>
+      <p><input type="text" id="email" name="email"/></p>
+
+       <label  class= "drop-down" for="society">Choose a Society you want to join:</label>
+        <select name="society" id="society">
+        <option value="Eat and repeat">Eat and retreat</option>
+        <option value="Society2">Society 2</option>
+        <option value="Society3">Society 3</option>
+        <option value="Society4">Society 4</option>
+        <option value="Society5">Society 5</option>
+        </select>
+       <p><input type=submit value='Login' /></p>
+   </form>
+</section>
 
 {% endblock %}
