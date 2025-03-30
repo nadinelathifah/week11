@@ -246,9 +246,7 @@
 }
 
 
-
-
-
+/* --------------------- LAYOUT.HTML----------------------- */
 
 title {
     text-transform: capitalize;
@@ -278,7 +276,7 @@ footer {
 }
 
 
-
+/* --------------------- SOCIETIES ----------------------- */
 /* Societies Page Styling */
 #societiessection .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -345,6 +343,8 @@ footer {
     }
 }
 
+
+/* --------------------- STUDENT HALLS ----------------------- */
 .blossom {
     background-color: rgb(243, 235, 224);
 }
@@ -387,6 +387,8 @@ footer {
     padding-bottom: 20px;
 }
 
+
+/* --------------------- SIGN UP ----------------------- */
 form {
     background-color: rgb(246, 239, 229);
     height: auto;
