@@ -349,12 +349,40 @@ footer {
     background-color: rgb(243, 235, 224);
 }
 
+.blossom .container {
+    padding-bottom: 20px;
+}
+
 
 .bubbles {
     background-color: aliceblue;
 }
 
+.bubbles .container {
+    padding-bottom: 20px;
+}
 
 .buttercup {
-    background-color: rgb(236, 248, 227);
+    background-color: rgb(49, 8, 8);
+}
+
+.buttercup .container {
+    padding-bottom: 20px;
+}
+
+.belle {
+    background-color: rgb(242, 241, 238);
+}
+
+.belle .container {
+    padding-bottom: 20px;
+}
+
+
+.bunny {
+    background-color: rgb(24, 7, 43);
+}
+
+.bunny .container {
+    padding-bottom: 20px;
 }
