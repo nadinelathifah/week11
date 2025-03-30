@@ -48,6 +48,17 @@ def students():
 def signup():
     return render_template('sign_up.html', title_head='sign up', title_body='sign up', subtitle="join a society by signing up and choosing a society.", img="static/images/university/campus5.png")
 
+@app.route("/eatretreatsociety")
+def eat_retreat():
+    return render_template('eat_and_retreat_society.html', title_head="eat and retreat society", title_body="Eat & Retreat Society", subtitle="This is  a society for explorers of local delicacy and hidden gem", img="static/images/eatretreat3.jpeg")
+
+
+
+
+
+
+
+
 
 @app.route('/sumit', methods =['POST'])
 def submit():

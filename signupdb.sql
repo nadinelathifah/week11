@@ -1,6 +1,9 @@
 create database signupdb;
 use signupdb;
 
+select * from society_ppf;
+
+
 create table society_ppf(
 SocietyMembershipID int not null primary key auto_increment,
 SocietyName varchar (150)
@@ -16,4 +19,12 @@ SocietyMembershipID int,
 foreign key (SocietyMembershipID) references society_ppf(SocietyMembershipID)
 );
 
-i
+
+insert into society_ppf(SocietyName)
+values("Eat and Retreat Society"),
+("Sci-fi gee Society"),
+("The clue seekers Society"),
+("Law Society "),
+("Foreign Exchange Society")
+;
+
