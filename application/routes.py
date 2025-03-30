@@ -46,3 +46,8 @@ def students():
 @app.route('/signup')
 def signup():
     return render_template('sign_up.html', title_head='sign up', title_body='sign up', subtitle="join a society by signing up and choosing a society.", img="static/images/university/campus5.png")
+
+@app.route('/scifi')
+def scifi():
+    return render_template('scifi.html', title_head='sci-fi society', title_body='Welcome to Sci-Fi Gee Society', subtitle="Inclined to science and fiction? Jump in!", img="static/images/Dream_TradingCard (1).jpg")
+
