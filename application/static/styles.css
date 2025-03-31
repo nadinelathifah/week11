@@ -593,29 +593,27 @@ p .secondline {
 #signup {
     background-color: aliceblue;
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    height: 100vh; /* Full viewport height */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     font-weight: 500;
     /* text-shadow: 2px 2px 4px #3c072564; */
 }
 
-#sign {
+form {
     background: linear-gradient(45deg, rgb(147, 2, 55), rgb(221, 0, 103), pink);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 400px;
-}
-
-form {
     height: auto;
     overflow-y: auto;
     position: relative;
 }
+
 
 label {
   display: block;
@@ -624,36 +622,31 @@ label {
 
 input[type="text"]
  {
-  width: 120%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-select {
-    margin-bottom: 20px;
-}
-
-input {
-  background-color: linear-gradient(to right, rgb(147, 2, 55), rgb(221, 0, 103));
-  color: black;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-
-}
+    background-color: linear-gradient(to right, rgb(147, 2, 55), rgb(221, 0, 103));
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
 
 #signup input[type="text"]:hover {
-  background-color: rgb(246, 239, 229);
+  background-color: rgb(254, 216, 162);
 }
 
-#signup button {
+#signup .btn-primary {
     border-radius: 20px;
+    border-color: black;
+    border-width: 2px;
     width: 100px;
-    background-color: #69f8fb;
+    background-color: #5cdafa;
+    color: black;
     font-weight: 50;
     text-transform: uppercase;
     letter-spacing: 2px;

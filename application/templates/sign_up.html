@@ -2,18 +2,18 @@
 {% block body_content %}
 
 <section id="signup">
-    <form id = "sign" action="" method="POST">
+    <form action="" method="POST">
        {{ form.hidden_tag() }}
-       <p>{{ form.first_name.label }}</p>
-       <p>{{ form.first_name(size=32) }}</p>
-       <p>{{ form.last_name.label }}</p>
-       <p>{{ form.last_name(size=32) }}</p>
-       <p>{{ form.email.label }}</p>
-       <p>{{ form.email(size=32) }}</p>
-        <p>{{ form.society.label(class="drop-down") }}</p>
-        <p>{{ form.society() }}</p>
-        <br>
-        <p>{{ form.submit() }}</p>
+      <p>{{ form.first_name.label }}</p>
+      <p>{{ form.first_name(size=32) }}</p>
+      <p>{{ form.last_name.label }}</p>
+      <p>{{ form.last_name(size=32) }}</p>
+      <p>{{ form.email.label }}</p>
+      <p>{{ form.email(size=32) }}</p>
+      <p>{{ form.society.label(class="drop-down") }}</p>
+      <p>{{ form.society() }}</p>
+      <br>
+      <p>{{ form.submit() }}</p>
 
    </form>
 </section>

@@ -29,6 +29,15 @@ values("Eat and Retreat Society"),
 ;
 
 SELECT * FROM society_ppf;
+
+DELIMITER // 
+CREATE PROCEDURE AddMember (
+    IN firstname varchar(100),
+    IN lastname varchar(100),
+    IN email varchar(100),
+)
+
+
 -- DELI-- MITER //
 
 -- CREATE PROCEDURE AddMemberBySociety(

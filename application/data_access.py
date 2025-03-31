@@ -19,10 +19,10 @@ def main():
         WHERE society_name ='Eat and Retreat Society'
         """)
 
-    society_id = cursor.fetchone()
+    result_set = cursor.fetchone()
 
-    if society_id is not None:
-        society_id = society_id[0]
+    if result_set != None:
+        result_set = result_set[0]
 
         sql = """INSERT INTO student (
         firstname, 
@@ -31,14 +31,14 @@ def main():
         SocietyID) 
         VALUES (%s, %s, %s,%s)"""
 
-        val = ('Ross', 'Geller', 'gh@hj.com', society_id)
+        val = ('Ross', 'Geller', 'gh@hj.com', result_set)
         cursor.execute(sql, val)
 
         mydb.commit()
 
         print(cursor.rowcount, "record inserted.")
     else:
-        raise ValueError('Society Not Found')
+        raise ValueError('That society is unavailable at PPU campus, please enter a valid society.')
 
 
 def get_signupdb_connection():
@@ -55,7 +55,7 @@ def add_member(firstname, lastname, email, SocietyID):
     conn = get_signupdb_connection()
     cursor = conn.cursor()
 
-    sql = "INSERT INTO person (firstname, lastname, email, SocietyID) VALUES (%s, %s, %s, %s)"
+    sql = "INSERT INTO student (firstname, lastname, email, SocietyID) VALUES (%s, %s, %s, %s)"
     val = (firstname, lastname, email, SocietyID)
     cursor.execute(sql, val)
 
@@ -81,11 +81,11 @@ def get_member():
 
     for member in result_set:
         member_list.append({
-            'Student': member[0],
-            'Firstname': member[1],
-            'Lastname': member[2],
-            'Email': member[3],
-            'Society': member[4]
+            'student': member[0],
+            'firstname': member[1],
+            'lastname': member[2],
+            'email': member[3],
+            'SocietyID': member[4]
         })
     return member_list
 

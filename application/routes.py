@@ -42,7 +42,8 @@ def contact():
 
 @app.route('/students')
 def students():
-    return render_template('students.html', title_head='Students', title_body='PPU Students', subtitle='current students enrolled in a society', img="static/images/university/ppg.jpeg")
+    student_data = get_member()
+    return render_template('students.html', title_head='Students', title_body='PPU Students', subtitle='current students enrolled in a society', img="static/images/university/ppg.jpeg", student="student_data")
 
 @app.route('/forexsoc')
 def forexsoc():
