@@ -46,3 +46,8 @@ def students():
 @app.route('/signup')
 def signup():
     return render_template('sign_up.html', title_head='sign up', title_body='sign up', subtitle="join a society by signing up and choosing a society.", img="static/images/university/campus5.png")
+
+
+@app.route('/forexsoc')
+def forexsoc():
+    return render_template('foreign_exchange_society.html', title_head='foreign exchange society', title_body='foreign exchange society', subtitle="learn new cultures, expand your horizons", img="static/images/forexsoc.jpeg")
