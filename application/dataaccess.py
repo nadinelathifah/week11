@@ -1,63 +1,77 @@
-
 import mysql.connector
 
-mydb = mysql.connector.connect(
-  host="localhost",
-  user="root",
-  password="",
-  database="signupdb"
-)
 
-
-def main():
-    print(mydb)
-
-    cursor = mydb.cursor()
-
-    sql = "INSERT INTO sign_up_ppf (firstname, lastname, email, SocietyName) VALUES (%s, %s, %s,%s)"
-    val = ('Ross', 'Geller', 'gh@hj.com', 'Eat and Retreat Society');
-    cursor.execute(sql, val)
-
-    mydb.commit()
-
-    print(cursor.rowcount, "record inserted.")
-
-
-def get_ppgirls_connection():
-    mydb = mysql.connector.connect(
+# Function to establish database connection
+def get_db_connection():
+    return mysql.connector.connect(
         host="localhost",
         user="root",
         password="",
         database="signupdb"
     )
 
-    return mydb
 
-
-def add_member(firstname, lastname, email,societymembershipID ):
-    conn = get_ppgirls_connection()
+# Function to insert a member into the database
+def add_member(firstname, lastname, email, society_name):
+    conn = get_db_connection()
     cursor = conn.cursor()
 
-    sql = "INSERT INTO person (firstname, lastname, email, SocietyName) VALUES (%s, %s, %s, %s)"
-    val = (firstname, lastname, email, societymembershipID)
+    # Fetch SocietyMembershipID based on SocietyName
+    cursor.execute("SELECT SocietyMembershipID FROM society_ppf WHERE SocietyName = %s", (society_name,))
+    society = cursor.fetchone()
+
+    if not society:
+        print("Error: Society does not exist.")
+        return
+
+    society_id = society[0]
+
+    # Insert user details
+    sql = "INSERT INTO sign_up_ppf (firstname, lastname, email, SocietyMembershipID) VALUES (%s, %s, %s, %s)"
+    val = (firstname, lastname, email, society_id)
     cursor.execute(sql, val)
 
     conn.commit()
+    print(f"{cursor.rowcount} record inserted.")
+
+    cursor.close()
+    conn.close()
 
 
-def get_member():
-    conn = get_ppgirls_connection()
+# Function to retrieve all members
+def get_members():
+    conn = get_db_connection()
     cursor = conn.cursor()
 
-    sql = "Select ID, Firstname, Lastname, email and SocietyName from person"
-    cursor.execute(sql)
+    sql = """SELECT s.MemberID, s.firstname, s.lastname, s.email, p.SocietyName
+             FROM sign_up_ppf s
+             JOIN society_ppf p ON s.SocietyMembershipID = p.SocietyMembershipID"""
 
+    cursor.execute(sql)
     result_set = cursor.fetchall()
-    member_list = []
+
+    members = []
     for member in result_set:
-        member.append({'ID': member[0], 'Firstname': member[1], 'Lastname': member[2], 'email': member[3],'Society Name': member[4] })
-    return member_list
+        members.append({
+            'ID': member[0],
+            'Firstname': member[1],
+            'Lastname': member[2],
+            'Email': member[3],
+            'Society': member[4]
+        })
+
+    cursor.close()
+    conn.close()
+    return members
+
+
+# Main function to insert a sample member
+def main():
+    add_member("Ross", "Geller", "gh@hj.com", "Eat and Retreat")
+    print(get_members())
 
 
 if __name__ == "__main__":
     main()
+
+
