@@ -51,3 +51,8 @@ def signup():
 @app.route('/forexsoc')
 def forexsoc():
     return render_template('foreign_exchange_society.html', title_head='foreign exchange society', title_body='foreign exchange society', subtitle="learn new cultures, expand your horizons", img="static/images/forexsoc.jpeg")
+
+@app.route('/scifi')
+def scifi():
+    return render_template('scifi.html', title_head='sci-fi society', title_body='Welcome to Sci-Fi Gee Society', subtitle="Inclined to science and fiction? Jump in!", img="static/images/Dream_TradingCard (1).jpg")
+
