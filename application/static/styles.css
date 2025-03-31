@@ -187,7 +187,7 @@ footer {
     padding-bottom: 30px;
 }
 #rankingssection .ranking-1 {
-    background-color: #ff4b5c;
+    background-color: #ff4b69;
     border-radius: 20px;
 }
 #rankingssection .ranking-2 {
@@ -487,10 +487,10 @@ footer {
     display: flex;
     align-items: center;
 }
-#q1 {
+#openingquote {
     justify-content: flex-end;
 }
-#q2 {
+#closingquote {
     justify-content: flex-start;
 }
 p .firstline {
@@ -517,6 +517,7 @@ p .secondline {
     border-width: 4px;
     width: 200px;
     height: 200px;
+    text-transform: capitalize;
 }
 
 
@@ -526,10 +527,32 @@ p .secondline {
 .blossom {
     background-color: rgb(243, 235, 224);
 }
-
 .blossom .container {
     padding-bottom: 20px;
 }
+#blossomcontent {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-style: normal;
+}
+#blossomcontent .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 0;
+    border-width: 4px;
+    width: 300px;
+    height: 170px;
+    text-transform: capitalize;
+}
+#blossomcontent img {
+    width: 100px;
+    border-radius: 50%;
+}
+
 
 
 .bubbles {
@@ -541,7 +564,7 @@ p .secondline {
 }
 
 .buttercup {
-    background-color: rgb(49, 8, 8);
+    background-color: rgb(211, 229, 192);
 }
 
 .buttercup .container {
@@ -558,7 +581,7 @@ p .secondline {
 
 
 .bunny {
-    background-color: rgb(24, 7, 43);
+    background-color: rgb(162, 118, 200);
 }
 
 .bunny .container {

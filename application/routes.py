@@ -60,3 +60,6 @@ def scifi():
 def eatretreatsociety():
     return render_template('eat_and_retreat_society.html', title_head='eat & retreat society', title_body='Hi daliya', subtitle="Hi Daliya please add a subheading and an image! Also i love the pictures!")
 
+@app.route('/practice')
+def practice():
+    return render_template('practice.html', title_head='title', title_body='title', subtitle="subheading")
