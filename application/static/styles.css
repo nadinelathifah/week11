@@ -14,7 +14,7 @@ title {
 h1 {
     font-family: 'Bagel Fat One', sans-serif;
     font-size: 4rem;
-    text-shadow: 4px 4px 4px black;
+    text-shadow: 5px 5px 10px black;
     padding-top: 130px;
     padding-left: 100px;
     text-transform: capitalize;
@@ -26,7 +26,6 @@ h4 {
     padding-left: 100px;
 }
 
-
 footer {
     font-family: 'Graduate', sans-serif;
     padding: 10px 10px;
@@ -35,9 +34,7 @@ footer {
 }
 
 
-
-/* --------------------- HOME ----------------------- */
-/* Menu Bar Controls */
+/* --------- Menu Bar Controls ---------*/
 .navbar {
     background: linear-gradient(to right, rgb(147, 2, 55), rgb(221, 0, 103));
     padding-top: 2px;
@@ -82,7 +79,6 @@ footer {
     list-style: none;
 }
 
-
 /* For the Dropdown Menu */
 .drop-down {
     background-color: white;
@@ -117,9 +113,16 @@ footer {
     color:rgb(198, 128, 0);
 }
 
+/* Adding a line between the society names and 'All Societies' */
 .dropdown .dropdown-divider {
     border-top: 1px solid black;
     margin:8px 0;
+}
+
+/* Turning the text colour grey when user is on the page */
+.drop-down .nav-link.disabled {
+    color: gray;
+    font-weight: 600;
 }
 
 /* For the Logo: adjusting the size of the logo */
@@ -173,6 +176,7 @@ footer {
 
 
 
+/* --------------------- HOME ----------------------- */
 #rankingssection {
     background-color: rgb(234, 223, 204);
     /* background-color: rgb(232, 208, 162); */
@@ -268,6 +272,7 @@ footer {
 /* --------------------- SOCIETIES ----------------------- */
 /* Societies Page Styling */
 #societiessection .card {
+    font-family: 'Poppins', sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 8px;
     padding: 16px;
@@ -319,6 +324,14 @@ footer {
 #societiessection .card .button:hover {
     background-color: #d264b6ff;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#message h2 {
+    font-family: 'Bagel Fat One', sans-serif;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    color: rgb(221, 0, 103)
+
 }
 
 @media screen and (max-width: 650px) {
@@ -385,6 +398,7 @@ footer {
     height: auto;
     margin: 0 auto;
     overflow-y: auto;
+    font-family: 'Poppins', sans-serif;
 }
 #programCarousel {
     width: 80%;            
@@ -438,7 +452,7 @@ footer {
     position: relative;
 }
 .carousel-caption {
-    background-color: rgba(127, 117, 101, 0.251);
+    background-color: rgba(127, 117, 101, 0.23);
     border-radius: 50px;
     padding: 5px;
     padding-bottom: 20px;
@@ -455,8 +469,56 @@ footer {
     padding: 15px;
 }
 .carousel-item h5, .carousel-item p {
-    text-shadow: 5px 5px 10px black;
+    text-shadow: 6px 6px 12px black;
 }
+
+#quote {
+    font-family: 'Poppins', sans-serif;
+}
+
+.quote-text {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.quote-mark {
+    display: flex;
+    align-items: center;
+}
+#q1 {
+    justify-content: flex-end;
+}
+#q2 {
+    justify-content: flex-start;
+}
+p .firstline {
+    font-weight: 600; 
+}
+p .secondline {
+    text-align: right;
+    display: block;
+    font-size: 1rem;
+}
+
+
+#quo {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+#quo .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 0;
+    border-width: 4px;
+    width: 200px;
+    height: 200px;
+}
+
 
 
 
