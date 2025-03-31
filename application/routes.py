@@ -56,3 +56,7 @@ def forexsoc():
 def scifi():
     return render_template('scifi.html', title_head='sci-fi society', title_body='Welcome to Sci-Fi Gee Society', subtitle="Inclined to science and fiction? Jump in!", img="static/images/Dream_TradingCard (1).jpg")
 
+@app.route('/eatretreatsociety')
+def eatretreatsociety():
+    return render_template('eat_and_retreat_society.html', title_head='eat & retreat society', title_body='Hi daliya', subtitle="Hi Daliya please add a subheading and an image! Also i love the pictures!")
+

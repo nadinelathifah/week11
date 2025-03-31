@@ -27,26 +27,58 @@
                     <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Societies</a>
                         <ul class="drop-down">
+                            {% if request.path != '/eatretreatsociety'%}
                             <li><a href= "/eatretreatsociety" class="dropdown-item">Eat and Retreat Society</a></li>
-                            <li><a href="#" class="dropdown-item">Society 2</a></li>
-                            <li><a href="#" class="dropdown-item">Society 3</a></li>
-                            <li><a href="#" class="dropdown-item">Society 4</a></li>
+                            {% else %}
+                            <li><a href="#" class="dropdown-item nav-link disabled">Eat and Retreat Society</a></li>
+                            {% endif %}
+                            {% if request.path != '/scifi'%}
+                            <li><a href="/scifi" class="dropdown-item">Sci-fi Gee Society</a></li>
+                            {% else %}
+                            <li><a href="#" class="dropdown-item nav-link disabled">Sci-fi Gee Society</a></li>
+                            {% endif %}
+                            <li><a href="#" class="dropdown-item">Emma's Society</a></li>
+                            <li><a href="#" class="dropdown-item">Liyah's Society</a></li>
                             {% if request.path != '/forexsoc'%}
                             <li><a href="/forexsoc" class="dropdown-item">Foreign Exchange Society</a></li>
                             {% else %}
                             <li><a href="#" class="dropdown-item nav-link disabled">Foreign Exchange Society</a></li>
                             {% endif %}
                             <li><hr class="dropdown-divider"></li>
+                            {% if request.path != '/societies'%}
                             <li><a href="/societies" class="dropdown-item">★ All Societies</a></li>
+                            {% else %}
+                            <li><a href="#" class="dropdown-item nav-link disabled">★ All Societies</a></li>
+                            {% endif %}
                         </ul>
                     </li>
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Student Halls</a>
                         <ul class="drop-down">
+                            {%if request.path != '/blossomhall' %}
                             <li><a href="/blossomhall" class="dropdown-item">★ Blossom Hall</a></li>
+                            {% else %}
+                            <li><a href="#" class="dropdown-item nav-link disabled">★ Blossom Hall</a></li>
+                            {% endif %}
+                            {%if request.path != '/bubbleshall' %}
                             <li><a href="/bubbleshall" class="dropdown-item">★ Bubbles Hall</a></li>
+                            {% else %}
+                            <li><a href="#" class="dropdown-item nav-link disabled">★ Bubbles Hall</a></li>
+                            {% endif %}
+                            {%if request.path != '/buttercuphall' %}
                             <li><a href="/buttercuphall" class="dropdown-item">★ Buttercup Hall</a></li>
+                            {% else %}
+                            <li><a href="#" class="dropdown-item nav-link disabled">★ Buttercup Hall</a></li>
+                            {% endif %}
+                            {%if request.path != '/bellehall' %}
                             <li><a href="/bellehall" class="dropdown-item">★ Belle Hall</a></li>
+                            {% else %}
+                            <li><a href="#" class="dropdown-item nav-link disabled">★ Belle Hall</a></li>
+                            {% endif %}
+                            {%if request.path != '/bunnyphall' %}
                             <li><a href="/bunnyphall" class="dropdown-item">★ Bunny Hall</a></li>
+                            {% else %}
+                            <li><a href="#" class="dropdown-item nav-link disabled">★ Bunny Hall</a></li>
+                            {% endif %}
                         </ul>
                     </li>
                     <li class="nav-item"><a href="/students" class="nav-link">Students</a></li>
