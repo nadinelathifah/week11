@@ -2,24 +2,19 @@
 {% block body_content %}
 
 <section id="signup">
-   <form id = "sign" action="" method="POST">
-      <p><label for="firstname">firstname: </label></p>
-      <p><input type="text" id="firstname" name="firstname" required/></p>
-       <p><label for="lastname">lastname: </label></p>
-      <p><input type="text" id="lastname" name="lastname"/></p>
-        <p><label for="email">email id: </label></p>
-      <p><input type="text" id="email" name="email"/></p>
+    <form id = "sign" action="" method="POST">
+       {{ form.hidden_tag() }}
+       <p>{{ form.first_name.label }}</p>
+       <p>{{ form.first_name(size=32) }}</p>
+       <p>{{ form.last_name.label }}</p>
+       <p>{{ form.last_name(size=32) }}</p>
+       <p>{{ form.email.label }}</p>
+       <p>{{ form.email(size=32) }}</p>
 
-       <label  class= "drop-down" for="society">Choose a Society you want to join:</label>
-        <select name="society" id="society">
-        <option value="Eat and Retreat">Eat and Retreat</option>
-        <option value="Society2">Sci-fi gee Society</option>
-        <option value="Society3">The clue seekers Society</option>
-        <option value="Society4">Law Society</option>
-        <option value="Foreign Exchange">Foreign Exchange</option>
-        </select>
-       <br>
-       <p><a href="/students" type=submit><button  type=submit>Login</button></a></p>
+        <p>{{ form.society.label(class="drop-down") }}</p>
+        <p>{{ form.society() }}</p>
+        <br>
+        <p>{{ form.submit() }}</p>
 
    </form>
 </section>

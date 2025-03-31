@@ -1,4 +1,6 @@
 from flask import render_template, url_for, request, redirect, session
+from application.forms.register_form import RegisterForm
+from application.data_access import add_member, get_member
 
 from application import app
 import os
@@ -43,11 +45,6 @@ def contact():
 def students():
     return render_template('students.html', title_head='Students', title_body='PPU Students', subtitle='current students enrolled in a society', img="static/images/university/ppg.jpeg")
 
-@app.route('/signup')
-def signup():
-    return render_template('sign_up.html', title_head='sign up', title_body='sign up', subtitle="join a society by signing up and choosing a society.", img="static/images/university/campus5.png")
-
-
 @app.route('/forexsoc')
 def forexsoc():
     return render_template('foreign_exchange_society.html', title_head='foreign exchange society', title_body='foreign exchange society', subtitle="learn new cultures, expand your horizons", img="static/images/forexsoc.jpeg")
@@ -58,8 +55,33 @@ def scifi():
 
 @app.route('/eatretreatsociety')
 def eatretreatsociety():
-    return render_template('eat_and_retreat_society.html', title_head='eat & retreat society', title_body='Hi daliya', subtitle="Hi Daliya please add a subheading and an image! Also i love the pictures!", img= 'static/images/eatretreat3.jpeg')
+    return render_template('eat_and_retreat_society.html', title_head='eat & retreat society', title_body='eat & retreat society', subtitle="Welcome", img= 'static/images/eatretreat3.jpeg')
 
-@app.route('/practice')
-def practice():
-    return render_template('practice.html', title_head='title', title_body='title', subtitle="subheading")
+
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+    error = ""
+    register_form = RegisterForm()
+
+    if request.method == 'POST':
+        first_name = register_form.first_name.data
+        last_name = register_form.last_name.data
+        email = register_form.email.data
+        society = register_form.society.data
+
+        if len(first_name) == 0 or len(last_name) == 0:
+            error = 'Please supply both a first and last name'
+
+        else:
+            student.append({'Firstname': first_name, 'Lastname': last_name, 'Email': email, 'Society': society})
+            add_member(first_name, last_name, email, society)
+            return redirect(url_for('sign up'))
+
+    return render_template('sign_up.html',
+                           form=register_form,
+                           message=error,
+                           title_head='sign up',
+                           title_body='sign up',
+                           subtitle="join a society by signing up and choosing a society.",
+                           img="static/images/university/campus5.png")
+

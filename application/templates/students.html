@@ -13,24 +13,25 @@
         </div>
     </div>
     <hr>
-    {% for sign_up_ppf in student%}
-    <div class="row">
-        <div class="col-sm">
-    <p>{{sign_up_ppf.Firstname}}</p>
+
+    {% for member in student %}
+        <div class="row">
+            <div class="col-sm">
+                <p>{{ student.firstname}}</p>
+            </div>
+            <div class="col-sm">
+                <p>{{ student.lastname }}</p>
+            </div>
+            <div class="col-sm">
+                <p>{{ student.email }}</p>
+            </div>
+            <div class="col-sm">
+                <p>{{ student.SocietyID }}</p>
+            </div>
+           <hr>
         </div>
-        <div class="col-sm">
-    <p>{{ sign_up_ppf.Lastname }}</p>
-                </div>
-        <div class="col-sm">
-    <p>{{ sign_up_ppf.email }}</p>
-                </div>
-        <div class="col-sm">
-    <p>{{ sign_up_ppf.society }}</p>
-                </div>
-       <hr>
-    </div>
     {% endfor %}
-            <a href="/home">Lets go back to Home!!</a>
+            <a href="/signup">Join a society on the sign up page</a>
 
 
 

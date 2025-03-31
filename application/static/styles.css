@@ -622,15 +622,17 @@ label {
   margin-bottom: 5px;
 }
 
-input[type="firstname"],
-input[type="lastname"],
-input[type="email"]
+input[type="text"]
  {
   width: 120%;
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+select {
+    margin-bottom: 20px;
 }
 
 input {
@@ -644,12 +646,8 @@ input {
 
 }
 
-input:hover {
+#signup input[type="text"]:hover {
   background-color: rgb(246, 239, 229);
-}
-
-select {
-    margin-bottom: 40px;
 }
 
 #signup button {
