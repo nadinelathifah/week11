@@ -3,29 +3,29 @@
 
 <section>
     <div class="container pt-5">
-        <h3>Students</h3>
+        <h3>Members</h3>
         <hr>
-<section>
     <div class="row strong">
         <div class="col-sm">Firstname</div>
         <div class="col-sm">Lastname</div>
         <div class="col-sm">email</div>
         <div class="col-sm">Society Name</div>
+        </div>
     </div>
     <hr>
-    {% for student in sign_up %}
+    {% for sign_up_ppf in students%}
     <div class="row">
         <div class="col-sm">
-    <p>{{sign_up.Firstname}}</p>
+    <p>{{sign_up_ppf.Firstname}}</p>
         </div>
         <div class="col-sm">
-    <p>{{ sign_up.Lastname }}</p>
+    <p>{{ sign_up_ppf.Lastname }}</p>
                 </div>
         <div class="col-sm">
-    <p>{{ sign_up.email }}</p>
+    <p>{{ sign_up_ppf.email }}</p>
                 </div>
         <div class="col-sm">
-    <p>{{ sign_up.society }}</p>
+    <p>{{ sign_up_ppf.Society }}</p>
                 </div>
        <hr>
     </div>
