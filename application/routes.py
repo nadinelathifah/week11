@@ -58,18 +58,8 @@ def scifi():
 
 @app.route('/eatretreatsociety')
 def eatretreatsociety():
-    return render_template('eat_and_retreat_society.html', title_head='eat & retreat society', title_body='Hi daliya', subtitle="Hi Daliya please add a subheading and an image! Also i love the pictures!", img= 'static/images/eatretreat3.jpeg')
+    return render_template('eat_and_retreat_society.html', title_head='eat & retreat society', title_body='Hi daliya', subtitle="Hi Daliya please add a subheading and an image! Also i love the pictures!")
 
-
-
-
-
-
-
-
-
-
-
-@app.route('/practice')
-def practice():
-    return render_template('practice.html', title_head='title', title_body='title', subtitle="subheading")
+@app.route('/clueseekers')
+def clueseekers():
+    return render_template('the_clue_seekers_society.html', title_head='The Clue Seekers Society', title_body='The Clue Seekers Society', subtitle="Discover the gripping details and hidden truths of true crime.", img="static/images/tc.jpg")
