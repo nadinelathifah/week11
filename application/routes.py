@@ -58,5 +58,5 @@ def scifi():
 
 @app.route('/eatretreatsociety')
 def eatretreatsociety():
-    return render_template('eat_and_retreat_society.html', title_head='eat & retreat society', title_body='Hi daliya', subtitle="Hi Daliya please add a subheading and an image! Also i love the pictures!")
+    return render_template('eat_and_retreat_society.html', title_head='eat & retreat society', title_body='Hi daliya', subtitle="Hi Daliya please add a subheading and an image! Also i love the pictures!", img= 'static/images/eatretreat3.jpeg')
 

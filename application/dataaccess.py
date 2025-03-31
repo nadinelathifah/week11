@@ -14,7 +14,7 @@ def main():
 
     cursor = mydb.cursor()
 
-    sql = "INSERT INTO sign_up_ppf (firstname, lastname, email, SocietyMembershipID) VALUES (%s, %s, %s,%s)"
+    sql = "INSERT INTO sign_up_ppf (firstname, lastname, email, SocietyName) VALUES (%s, %s, %s,%s)"
     val = ('Ross', 'Geller', 'gh@hj.com', 'Eat and Retreat Society');
     cursor.execute(sql, val)
 
@@ -38,7 +38,7 @@ def add_member(firstname, lastname, email,societymembershipID ):
     conn = get_ppgirls_connection()
     cursor = conn.cursor()
 
-    sql = "INSERT INTO person (firstname, lastname, email, SocietyMembershipID) VALUES (%s, %s, %s, %s)"
+    sql = "INSERT INTO person (firstname, lastname, email, SocietyName) VALUES (%s, %s, %s, %s)"
     val = (firstname, lastname, email, societymembershipID)
     cursor.execute(sql, val)
 
