@@ -14,30 +14,24 @@
     </div>
     <hr>
 
-    {% for student in student %}
+    {% for member in members %}
         <div class="row">
             <div class="col-sm">
-                <p>{{ student.firstname}}</p>
+                <p>{{ member.firstname}}</p>
             </div>
             <div class="col-sm">
-                <p>{{ student.lastname }}</p>
+                <p>{{ member.lastname }}</p>
             </div>
             <div class="col-sm">
-                <p>{{ student.email }}</p>
+                <p>{{ member.email }}</p>
             </div>
             <div class="col-sm">
-                <p>{{ student.SocietyID }}</p>
+                <p>{{ member.SocietyID }}</p>
             </div>
            <hr>
         </div>
     {% endfor %}
             <a href="/signup">Join a society on the sign up page</a>
-
-
-        <p>This page is where we hope to implement victoria's 'Get Database People' query to display all the students. 
-            The initial page will just show the top section with the background image when logged off or not signed up. 
-            But once signed up or logged on, they will be able to see this section of the page where they can see 
-            the names of all students enrolled in a society.</p>
     </div>
 </section>
 {% endblock %}

@@ -9,6 +9,57 @@ mydb = mysql.connector.connect(
 )
 
 
+def get_signupdb_connection():
+    mydb = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="",
+        database="sign"
+    )
+    return mydb
+
+
+def add_member(firstname, lastname, email, SocietyID):
+    conn = get_signupdb_connection()
+    cursor = conn.cursor()
+
+    sql = "INSERT INTO student (firstname, lastname, email, SocietyID) VALUES (%s, %s, %s, %s)"
+    val = (firstname, lastname, email, SocietyID)
+    cursor.execute(sql, val)
+
+    conn.commit()
+    print(f"Student, {firstname} {lastname}, was added.")
+
+
+def get_member():
+    conn = get_signupdb_connection()
+    cursor = conn.cursor()
+    cursor.execute("""
+    SELECT
+        s.MemberID,
+        s.firstname,
+        s.lastname,
+        s.email,
+        soc.society_name
+        FROM student as s
+        INNER JOIN society as soc ON s.SocietyID = soc.SocietyID
+        """)
+
+    result_set = cursor.fetchall()
+    members = []
+
+    for member in result_set:
+        members.append({
+            'MemberID': member[0],
+            'firstname': member[1],
+            'lastname': member[2],
+            'email': member[3],
+            'SocietyID': member[4]
+        })
+    return members
+
+
+
 def main():
     print(mydb)
 
@@ -40,54 +91,6 @@ def main():
     else:
         raise ValueError('That society is unavailable at PPU campus, please enter a valid society.')
 
-
-def get_signupdb_connection():
-    mydb = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="",
-        database="sign"
-    )
-    return mydb
-
-
-def add_member(firstname, lastname, email, SocietyID):
-    conn = get_signupdb_connection()
-    cursor = conn.cursor()
-
-    sql = "INSERT INTO student (firstname, lastname, email, SocietyID) VALUES (%s, %s, %s, %s)"
-    val = (firstname, lastname, email, SocietyID)
-    cursor.execute(sql, val)
-
-    conn.commit()
-    print(f"Member {firstname} {lastname} was added.")
-
-
-def get_member():
-    conn = get_signupdb_connection()
-    cursor = conn.cursor()
-    cursor.execute("""
-    SELECT
-        s.firstname,
-        s.lastname,
-        s.email,
-        soc.society_name
-        FROM student as s
-        INNER JOIN society as soc ON s.SocietyID = soc.SocietyID
-        """)
-
-    result_set = cursor.fetchall()
-    member_list = []
-
-    for member in result_set:
-        member_list.append({
-            'student': member[0],
-            'firstname': member[1],
-            'lastname': member[2],
-            'email': member[3],
-            'SocietyID': member[4]
-        })
-    return member_list
 
 if __name__ == "__main__":
     main()

@@ -13,10 +13,11 @@ class RegisterForm(FlaskForm):
     last_name = StringField('Lastname', validators=[InputRequired(), fill_form_check], render_kw={"class": "form-control"})
     email = StringField('Email', validators=[InputRequired(), fill_form_check], render_kw={"class": "form-control"})
     society = SelectField('Choose a Society:', choices=[
+        ('', 'Choose a Society:'),
         ('1', 'Eat and Retreat'),
         ('2', 'Sci-Fi gee'),
         ('3', 'Clue Seekers'),
         ('4', 'Law'),
         ('5', 'Foreign Exchange')
     ], render_kw={"class": "form-control"})
-    submit = SubmitField('LOGIN', render_kw={"class": "btn btn-primary form-control-color"})
+    submit = SubmitField('SIGN UP', render_kw={"class": "btn btn-primary form-control-color"})
