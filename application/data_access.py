@@ -24,7 +24,13 @@ def main():
     if society_id is not None:
         society_id = society_id[0]
 
-        sql = "INSERT INTO student (firstname, lastname, email, SocietyID) VALUES (%s, %s, %s,%s)"
+        sql = """INSERT INTO student (
+        firstname, 
+        lastname, 
+        email, 
+        SocietyID) 
+        VALUES (%s, %s, %s,%s)"""
+
         val = ('Ross', 'Geller', 'gh@hj.com', society_id)
         cursor.execute(sql, val)
 

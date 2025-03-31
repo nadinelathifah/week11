@@ -6,7 +6,6 @@ from application import app
 import os
 
 @app.route('/')
-@app.route('/home')
 def home():
     return render_template('home.html', title_head='Powerpuff University', title_body='Powerpuff University', subtitle='★ explore your ambitions ★', img="static/images/university/campus1.png")
 
@@ -84,4 +83,9 @@ def signup():
                            title_body='sign up',
                            subtitle="join a society by signing up and choosing a society.",
                            img="static/images/university/campus5.png")
+
+
+@app.route('/clueseekers')
+def clueseekers():
+    return render_template('the_clue_seekers_society.html', title_head='The Clue Seekers Society', title_body='The Clue Seekers Society', subtitle="Discover the gripping details and hidden truths of true crime.", img="static/images/tc.jpg")
 

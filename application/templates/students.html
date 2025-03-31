@@ -3,7 +3,7 @@
 
 <section>
     <div class="container pt-5">
-        <h3>Students</h3>
+        <h3>Members</h3>
         <hr>
     <div class="row strong">
         <div class="col-sm">Firstname</div>
@@ -14,7 +14,7 @@
     </div>
     <hr>
 
-    {% for member in student %}
+    {% for student in students %}
         <div class="row">
             <div class="col-sm">
                 <p>{{ student.firstname}}</p>
@@ -32,13 +32,6 @@
         </div>
     {% endfor %}
             <a href="/signup">Join a society on the sign up page</a>
-
-
-
-
-
-
-
 
 
         <p>This page is where we hope to implement victoria's 'Get Database People' query to display all the students. 
