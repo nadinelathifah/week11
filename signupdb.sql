@@ -5,7 +5,7 @@ select * from society_ppf;
 
 
 create table society_ppf(
-SocietyMembershipID int not null primary key auto_increment,
+SocietyMembershipID int NOT NULL PRIMARY key auto_increment,
 SocietyName varchar (150)
 );
 
@@ -28,6 +28,7 @@ values("Eat and Retreat Society"),
 ("Foreign Exchange Society")
 ;
 
+SELECT * FROM society_ppf;
 -- DELI-- MITER //
 
 -- CREATE PROCEDURE AddMemberBySociety(
@@ -95,4 +96,4 @@ BEGIN
     ) AS Confirmation;
 END //
 
-CALL AddMemberOfUniSociety('Ross', 'Geller', 'gh@hj.com', "The clue seekers Society");
+CALL AddMemberOfUniSociety('Ross', 'Geller', 'gh@hj.com', 'Eat and Retreat Society');
