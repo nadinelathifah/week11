@@ -6,6 +6,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
 
 
+/* --------------------- LAYOUT.HTML----------------------- */
+title {
+    text-transform: capitalize;
+}
+
+h1 {
+    font-family: 'Bagel Fat One', sans-serif;
+    font-size: 4rem;
+    text-shadow: 4px 4px 4px black;
+    padding-top: 130px;
+    padding-left: 100px;
+    text-transform: capitalize;
+}
+
+h4 {
+    text-transform: capitalize;
+    text-shadow: 4px 4px 4px black;
+    padding-left: 100px;
+}
+
+
+footer {
+    font-family: 'Graduate', sans-serif;
+    padding: 10px 10px;
+    background: linear-gradient(to left, rgb(147, 2, 55), rgb(221, 0, 103));
+    color: white;
+}
+
+
+
 /* --------------------- HOME ----------------------- */
 /* Menu Bar Controls */
 .navbar {
@@ -233,35 +263,6 @@
     padding-right: 120px;
 }
 
-
-/* --------------------- LAYOUT.HTML----------------------- */
-
-title {
-    text-transform: capitalize;
-}
-
-h1 {
-    font-family: 'Bagel Fat One', sans-serif;
-    font-size: 4rem;
-    text-shadow: 4px 4px 4px black;
-    padding-top: 130px;
-    padding-left: 100px;
-    text-transform: capitalize;
-}
-
-h4 {
-    text-transform: capitalize;
-    text-shadow: 4px 4px 4px black;
-    padding-left: 100px;
-}
-
-
-footer {
-    font-family: 'Poppins', sans-serif;
-    padding: 10px 10px;
-    background: linear-gradient(to left, rgb(147, 2, 55), rgb(221, 0, 103));
-    color: white;
-}
 
 
 /* --------------------- SOCIETIES ----------------------- */
@@ -504,8 +505,28 @@ footer {
 
 
 /* --------------------- SIGN UP ----------------------- */
+#signup {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    /* text-shadow: 2px 2px 4px #3c072564; */
+}
+
+#sign {
+    background: linear-gradient(45deg, rgb(147, 2, 55), rgb(221, 0, 103), pink);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+}
+
 form {
-    background-color: rgb(246, 239, 229);
     height: auto;
     overflow-y: auto;
     position: relative;
@@ -520,7 +541,7 @@ input[type="firstname"],
 input[type="lastname"],
 input[type="email"]
  {
-  width: 100%;
+  width: 120%;
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -539,22 +560,19 @@ input {
 }
 
 input:hover {
-  background-color: #CD015D;
+  background-color: rgb(246, 239, 229);
 }
 
-#signup {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    height: 100vh; /* Full viewport height */
+select {
+    margin-bottom: 40px;
 }
 
-#sign {
-    background-color: rgb(246, 239, 229);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+#signup button {
+    border-radius: 20px;
+    width: 100px;
+    background-color: #69f8fb;
+    font-weight: 50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Bagel Fat One', sans-serif;
 }
-
-
