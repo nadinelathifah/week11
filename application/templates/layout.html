@@ -42,7 +42,11 @@
                             {% else %}
                             <li><a href="/clueseekers" class="dropdown-item nav-link disabled">The Clue Seekers Society</a></li>
                             {% endif %}
-                            <li><a href="#" class="dropdown-item">Law Society</a></li>
+                            {% if request.path != '/lawsoc'%}
+                            <li><a href="/lawsoc" class="dropdown-item">Law Society</a></li>
+                            {% else %}
+                            <li><a href="/lawsoc" class="dropdown-item nav-link disabled">Law Society</a></li>
+                            {% endif %}
                             {% if request.path != '/forexsoc'%}
                             <li><a href="/forexsoc" class="dropdown-item">Foreign Exchange Society</a></li>
                             {% else %}

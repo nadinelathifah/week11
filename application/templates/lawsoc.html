@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block body_content %}
+
+<section id="societiessection" style="background-color: rgb(18, 0, 48); height:auto; overflow-y: auto;">
+  <div class="container">
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img id="liya" src="{{ url_for('static', filename='images/university/lawimage.jpg') }}" alt="Liya">
+          <div class="container">
+            <h2>Welcome!</h2>
+            <p class="title">Welcome to the Law Society here at PPU. I'm Liya, the president of Law Soc, feel free to reach out if you have any questions!</p>
+            <p>Liya@PPU-law-soc.com</p>
+            <p><a href="/signup"><button class="button">Contact me</button></a></p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img id="liya" src="{{ url_for('static', filename='images/university/lawactivities.jpg') }}" alt="Liya">
+          <div class="container">
+            <h2>Activities</h2>
+            <p class="title">We cover everything from study sessions to practice moots. Whatever you need to kickstart your legal career, we've got it here! </p>
+              <p> We hold study sessions every Tuesday and Thursday exclusive to members only. </p>
+            <p>Find out more about our activities</p>
+            <p><a href="/signup"><button class="button">Find out more</button></a></p>
+          </div>
+        </div>
+      </div>
+
+                 <!-- Card 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img id="liya" src="{{ url_for('static', filename='images/university/lawsocnew.jpg') }}" alt="Liya">
+          <div class="container">
+            <h2>The Law Society</h2>
+            <p class="title">Suit up with sugar and spice: Powerpuff Law Society has your back! Join us and sign up today.</p>
+            <p>Sign up form</p>
+            <p><a href="/signup"><button class="button">Join us</button></a></p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

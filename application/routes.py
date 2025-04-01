@@ -91,3 +91,6 @@ def signup():
 def clueseekers():
     return render_template('the_clue_seekers_society.html', title_head='The Clue Seekers Society', title_body='The Clue Seekers Society', subtitle="Discover the gripping details and hidden truths of true crime.", img="static/images/tc.jpeg")
 
+@app.route('/lawsoc')
+def lawsoc():
+    return render_template('lawsoc.html', title_head='The Law Society', title_body='The Law Society', subtitle="From Townsville to the courtroom: Justice is our calling!", img="static/images/university/mooting.jpg")
