@@ -1,25 +1,26 @@
 {% extends "layout.html" %}
 {% block body_content %}
 
-<section id='societiessection'>
-         <div class="col-md-12">
-             <div class="card">
-                 <div class="container">
-                 <h2> Join The Clue Seekers Society to get an exciting insight into the world of true crime! </h2>
-                 </div>
-             </div>
-         </div>
+<section id='societiessection' style="background-color: rgb(7, 9, 36); height: auto; overflow-y: auto;">
+    <div class="col-md-12" style="height: 30vh; padding-top: 30px;">
+        <div class="card" style="background-color: rgb(255, 204, 0);">
+            <div class="container">
+                <h2> Join The Clue Seekers Society to get an exciting insight into the world of true crime! </h2>
+            </div>
+        </div>
+    </div>
     <div style="display: flex; justify-content: center;">
-    <img id='crimescene' src="{{ url_for('static', filename ='images/tc2.png') }}" alt='crimescene' style="width: 300px; height: auto;" >
-<img id='unigirls' src="{{ url_for('static', filename ='images/csuni.png') }}" alt='unigirls' style="width: 300px; height: auto;" >
-    <img id='crimescene2' src="{{ url_for('static', filename ='images/cs.png') }}" alt='crimescene2' style="width: 300px; height: auto;" >
+        <img id='crimescene' src="{{ url_for('static', filename ='images/tc2.png') }}" alt='crimescene' style="width: 300px; height: auto;" >
+        <img id='unigirls' src="{{ url_for('static', filename ='images/csuni.png') }}" alt='unigirls' style="width: 300px; height: auto;" >
+        <img id='crimescene2' src="{{ url_for('static', filename ='images/cs.png') }}" alt='crimescene2' style="width: 300px; height: auto;" >
     </div>
 
-    <div class="col-md-12">
-             <div class="card" style="width: 800px;">
-                 <div class="container">
-                 <h3> Explore true crime cases while sharpening your investigative skills, diving deep into both solved and cold cases. Challenge yourself to crack open unsolved mysteries by applying your newfound expertise and critical thinking abilities. </h3>
-                 </div>
+    <div class="col-md-12" style="padding-top: 10px; padding-bottom: 30px;">
+        <div class="card" style="width: 800px;">
+            <div class="container">
+                 <h3 style="font-size: 1.5rem;"> Explore true crime cases while sharpening your investigative skills, diving deep into both solved and cold cases. Challenge yourself to crack open unsolved mysteries by applying your newfound expertise and critical thinking abilities. </h3>
+            </div>
+        </div>
 
 </section>
 

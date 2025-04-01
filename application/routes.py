@@ -89,5 +89,5 @@ def signup():
 
 @app.route('/clueseekers')
 def clueseekers():
-    return render_template('the_clue_seekers_society.html', title_head='The Clue Seekers Society', title_body='The Clue Seekers Society', subtitle="Discover the gripping details and hidden truths of true crime.", img="static/images/tc.jpg")
+    return render_template('the_clue_seekers_society.html', title_head='The Clue Seekers Society', title_body='The Clue Seekers Society', subtitle="Discover the gripping details and hidden truths of true crime.", img="static/images/tc.jpeg")
 
