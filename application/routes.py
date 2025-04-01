@@ -1,4 +1,4 @@
-from flask import render_template, url_for, request, redirect, session
+from flask import render_template, url_for, request, redirect
 from application.forms.register_form import RegisterForm
 from application.data_access import add_member, get_member
 from application.fake_data import members
