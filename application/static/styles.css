@@ -591,11 +591,11 @@ p .secondline {
 
 /* --------------------- SIGN UP ----------------------- */
 #signup {
-    background-color: aliceblue;
+    background-color: rgb(214, 255, 233);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 75vh;
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     font-weight: 500;

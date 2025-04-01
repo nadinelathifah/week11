@@ -11,7 +11,7 @@ def home():
 
 @app.route('/societies')
 def societies():
-    return render_template('societies.html', title_head='Societies', title_body='Student Societies', subtitle='★ connect, engage, build communities: discover our student societies ★', img="static/images/university/campus2.jpg")
+    return render_template('societies.html', title_head='Societies', title_body='Student Societies', subtitle='★ connect, engage, build communities: discover our student societies ★', img="static/images/university/campus4.jpeg")
 
 @app.route('/blossomhall')
 def blossomhall():
