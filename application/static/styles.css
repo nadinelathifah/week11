@@ -668,3 +668,20 @@ input[type="text"]
 #tableheadings {
     font-weight: 700;
 }
+
+#eatretreat .accordion-header button {
+    background-color: rgb(147, 2, 55);
+    font-weight: 600;
+    color: white;
+}
+#eatretreat .accordion-body {
+    background-color: rgb(231, 222, 207);
+    font-weight: 500;
+}
+#eatretreat .accordion-item h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#eatretreat .col-md-4 img {
+    height: 70vh;
+}

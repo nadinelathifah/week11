@@ -10,6 +10,16 @@ def get_db_connection():
         database="signupdb"
     )
 
+def get_db_connection():
+    mydb = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="",
+        database="signupdb"
+    )
+    return mydb
+
+
 
 # Function to insert a member into the database
 def add_member(firstname, lastname, email, society_name):
