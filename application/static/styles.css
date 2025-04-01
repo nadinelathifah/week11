@@ -178,13 +178,14 @@ footer {
 
 /* --------------------- HOME ----------------------- */
 #rankingssection {
-    background-color: rgb(234, 223, 204);
+    /* background-color: rgb(255, 201, 241); */
     /* background-color: rgb(232, 208, 162); */
+    background-color: rgb(235, 191, 146);
     height: auto;
     font-family: 'Poppins', sans-serif;
     overflow-y: auto;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 #rankingssection .ranking-1 {
     background-color: #ff4b69;
@@ -217,31 +218,6 @@ footer {
 }
 
 
-
-#foundingsection {
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(26, 19, 64);
-    height: auto;
-    color: rgb(246, 239, 229);
-}
-#foundingsection .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-}
-#foundingsection .container .row {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-#foundingsection .container .col-sm-12 {
-    width: 100%;
-    text-align: center;
-}
-
-
-
 #campussection {
     background-color: rgb(246, 239, 229);
     height: auto;
@@ -265,6 +241,38 @@ footer {
 #campussection .container .text {
     padding-top: 150px;
     padding-right: 120px;
+}
+
+
+#foundingsection {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(29, 24, 59);
+    height: auto;
+    color: rgb(246, 239, 229);
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+#foundingsection .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+#foundingsection .container .row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#foundingsection .container .col-sm-12 {
+    width: 100%;
+    text-align: center;
+}
+
+#professorsection {
+    background-color: rgb(234, 223, 204);
+    height: auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 

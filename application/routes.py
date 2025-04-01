@@ -82,7 +82,7 @@ def signup():
                            message=error,
                            title_head='sign up',
                            title_body='sign up',
-                           subtitle="join a society by signing up and choosing a society.",
+                           subtitle="Choose a society, sign up & start your hero story!",
                            img="static/images/university/campus5.png")
 
 

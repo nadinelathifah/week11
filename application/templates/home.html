@@ -60,43 +60,47 @@
     </div>
 </section>
 
-<section id="foundingsection">
-    <div class="container pt-5">
-        <div class="row">
-            <div class="col-sm-12 col-md-8">
-                <h3>Our Founding</h3>
-                <p>Eyewitness testimony from a member of our faculty, Professor Utonium. Powerpuff University was founded in November 1998 when Professor Utonium accidentally discovered a dynamite ingredient: Chemical X.</p>
-                <hr>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <iframe src="https://www.youtube.com/embed/f7MiaSr-0ug" frameborder="0" width="450px" height="350px" allow="accelerometer autoplay clipboard-write encrypted-media; gyroscope picture-in=picture" allowfullscreen></iframe>
-            </div>
-            <hr>
-        </div>
-    </div>
-
+<section id="professorsection">
     <div id="quote" class="container-fluid">
         <div class="row">
           <div id="openingquote" class="col align-self-center quote-mark">
             <img src="{{ url_for('static', filename='images/university/openingquote.png') }}" alt="opening quote" width="100">
           </div>
           <div class="col align-self-center quote-text">
-            <img src="{{ url_for('static', filename='images/university/professor.png')}}" alt="picture of professor utonium">
+            <!-- <img src="{{ url_for('static', filename='images/university/professor.png')}}" alt="picture of professor utonium"> -->
             <hr>
             <p>
                 <span class="firstline">
                     The only way to deal with life is to be courageous, even when it feels impossible.</span>
                 <span class="secondline"><br>Professor Utonium, 1988</span>
             </p>
+            <hr>
           </div>
           <div id="closingquotes" class="col align-self-end quote-mark">
             <img src="{{ url_for('static', filename='images/university/closingquote.png') }}" alt="closing quote" width="100">
           </div>
-          <hr>
         </div>
     </div>
 </section>
 
+<section id="foundingsection">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-8">
+                <h3>Our Founding</h3>
+                <p>Eyewitness testimony and vintage archived footage from the founding member of our faculty, Professor Utonium. 
+                    <br>PPU was founded on November 1998 when Professor Utonium accidentally added an ingredient to the concoction: 
+                    <strong>Chemical X.</strong>
+                </p>
+                <hr>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <iframe src="https://www.youtube.com/embed/f7MiaSr-0ug" frameborder="0" width="800px" height="400px" allow="accelerometer autoplay clipboard-write encrypted-media; gyroscope picture-in=picture" allowfullscreen></iframe>
+            </div>
+            <hr>
+        </div>
+    </div>
+</section>
 
 
 {% endblock %}
