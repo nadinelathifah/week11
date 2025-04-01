@@ -72,7 +72,7 @@ def main():
 
     result_set = cursor.fetchone()
 
-    if result_set != None:
+    if result_set is not None:
         result_set = result_set[0]
 
         sql = """INSERT INTO student (
