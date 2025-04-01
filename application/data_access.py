@@ -30,7 +30,6 @@ def add_member(firstname, lastname, email, SocietyID):
     conn.commit()
     print(f"Student, {firstname} {lastname}, was added.")
 
-
 def get_member():
     conn = get_signupdb_connection()
     cursor = conn.cursor()
@@ -47,7 +46,6 @@ def get_member():
 
     result_set = cursor.fetchall()
     members = []
-
     for member in result_set:
         members.append({
             'MemberID': member[0],

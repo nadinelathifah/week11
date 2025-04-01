@@ -1,7 +1,7 @@
 from flask import render_template, url_for, request, redirect
 from application.forms.register_form import RegisterForm
+from application.table import members
 from application.data_access import add_member, get_member
-from application.fake_data import members
 from application import app
 import os
 
@@ -57,12 +57,17 @@ def students():
     students_in_db = get_member()
     print(students_in_db)
     return render_template('students.html', members=students_in_db, title_head='Students', title_body='PPU Students', subtitle='current students enrolled in a society', img="static/images/university/ppg.jpeg")
+# Incorporate the get_member() function into the route to query the sign database and fetch all the members.
+# render_template() function renders the students.html template and passes the list 'students_in_db' to the template via the 'members' variable.
+# {% for member in members %} loop will iterate over each member in the members list.
+#The list of members is passed from the backend (Flask) to the frontend (HTML template).
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
     error = ""
     register_form = RegisterForm()
 
+    # When a student submits a form, the request method is assigned to "POST" which executes retrieving data
     if request.method == 'POST':
         first_name = register_form.first_name.data
         last_name = register_form.last_name.data
