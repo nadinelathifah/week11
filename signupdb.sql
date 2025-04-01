@@ -24,7 +24,7 @@ insert into society_ppf(SocietyName)
 values("Eat and Retreat Society"),
 ("Sci-fi gee Society"),
 ("The clue seekers Society"),
-("Law Society "),
+("Law Society"),
 ("Foreign Exchange Society")
 ;
 
