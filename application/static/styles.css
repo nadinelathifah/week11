@@ -653,6 +653,10 @@ input[type="text"]
     font-family: 'Bagel Fat One', sans-serif;
 }
 
+#signup .btn-primary:hover {
+    background-color: rgb(173, 246, 69);
+}
+
 #tableheadings {
     font-weight: 700;
 }
