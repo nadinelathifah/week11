@@ -38,7 +38,7 @@ def bunnyhall():
 
 @app.route('/contact')
 def contact():
-    return render_template('contact.html', title_head='contact us', title_body='contact us', subtitle='connect with our front desk', img="static/images/university/campus.jpg")
+    return render_template('contact.html', title_head='contact us', title_body='contact us', subtitle='Sorry too busy saving the day!', img="static/images/university/campus.jpg")
 
 @app.route('/forexsoc')
 def forexsoc():
